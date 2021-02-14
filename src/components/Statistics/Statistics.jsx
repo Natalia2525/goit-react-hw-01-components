@@ -7,7 +7,11 @@ const Statistics = ({ title, stats }) => {
       {title && <h2 className={st.title}>{title}</h2>}
       <ul className={st.stat_list}>
         {stats.map(({ id, label, percentage }) => (
-          <li className="item" key={id}>
+          <li
+            className={st.item}
+            key={id}
+            style={{ backgroundColor: `rgb(${rand()},${rand()},${rand()})` }}
+          >
             <span className={st.label}>{label}</span>
             <span className={st.percentage}>{percentage}%</span>
           </li>
@@ -27,5 +31,9 @@ Statistics.propTypes = {
     }),
   ),
 };
+
+function rand() {
+  return Math.floor(Math.random() * 220);
+}
 
 export default Statistics;

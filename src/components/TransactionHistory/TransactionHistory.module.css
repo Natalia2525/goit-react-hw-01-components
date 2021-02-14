@@ -1,0 +1,13 @@
+.transaction {
+  width: 400px;
+  text-align: center;
+  background-color: #ececec;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px 5px rgb(180, 114, 114);
+}
+td,
+th {
+  padding: 5px;
+  border: 0.2px solid maroon;
+  text-align: center;
+}
