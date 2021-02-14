@@ -1,0 +1,7 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+}
+.item{
+    width: 70px;
+}
